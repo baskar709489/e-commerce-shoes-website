@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-img {
+    background: url('../src/assets/images/banner-bg.png');
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: inherit;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
