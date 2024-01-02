@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
 import Layout from "./components/layout/layout"
 import Page from "./components/header/page"
 import BannerImg from '../src/assets/images/banner-bg.png'
@@ -29,7 +29,6 @@ function App() {
 
   return (
     <>
-
       <BrowserRouter>
         <Routes>
           <Route>

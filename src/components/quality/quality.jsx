@@ -12,37 +12,37 @@ const Img8 = <Img08 />
 
 export default function Quality() {
     const Btnlink =
-        <Link to={'/'} className='bg-slate-700 hover:border border-slate-800 hover:text-black  text-white  hover:shadow-lg font-bold capitalize  md:px-4 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
+        <Link to={'/'} className='bg-slate-700 lg:bg-slate-800 hover:border border-slate-800 hover:text-black  text-white  hover:shadow-lg font-bold capitalize  md:px-4 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
     return (
         <>
             <section className='bg-slate-950 text-slate-300 md:py-10 py-5 md:my-10 my-5'>
                 <div className='w-11/12 mx-auto text-center'>
-                    <h1 className='text-5xl capitalize md:py-5 '>best quality </h1>
+                    <h1 className='text-3xl md:text-4xl lg:text-5xl  capitalize md:py-3 '>best quality </h1>
                     <p className='py-3 md:py-5'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, tempora.</p>
-                    <div className='flex flex-col md:flex-row gap-10 '>
+                    <div className='flex flex-col    md:flex-row gap-10 w-32 lg:w-11/12  md:w-2/3  mx-auto'>
 
-                        <div>
+                        <div className=''>
                             <Card img={Img2} price={`$ ${100}`} name={`Shoes`} />
 
-                            <Link to={'/'} className='bg-slate-200 border border-slate-800 text-black  hover:text-white hover:bg-yellow-400 hover:shadow-lg font-bold capitalize  md:px-4 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
+                            <Link to={'/'} className='bg-slate-200 border border-slate-800 text-black  hover:text-white hover:bg-yellow-400 hover:shadow-lg font-bold capitalize  md:px-2 w-32 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
 
                         </div>
                         <div>
                             <Card img={Img3} price={`$ ${100}`} name={`Shoes`} />
 
-                            <Link to={'/'} className='bg-slate-200 border border-slate-800 text-black  hover:text-white hover:bg-yellow-400 hover:shadow-lg font-bold capitalize  md:px-4 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
+                            <Link to={'/'} className='bg-slate-200 border border-slate-800 text-black   hover:text-white hover:bg-yellow-400 hover:shadow-lg font-bold capitalize  md:px-2 w-32 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
 
                         </div>
                         <div>
                             <Card img={Img4} price={`$ ${100}`} name={`Shoes`} />
 
-                            <Link to={'/'} className='bg-slate-200 border border-slate-800 text-black  hover:text-white hover:bg-yellow-400 hover:shadow-lg font-bold capitalize  md:px-4 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
+                            <Link to={'/'} className='bg-slate-200 border border-slate-800 text-black  hover:text-white hover:bg-yellow-400 hover:shadow-lg font-bold capitalize  md:px-2 w-32 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
 
                         </div>
                         <div>
                             <Card img={Img5} price={`$ ${100}`} name={`Shoes`} />
 
-                            <Link to={'/'} className='bg-slate-200 border border-slate-800 text-black  hover:text-white hover:bg-yellow-400 hover:shadow-lg font-bold capitalize  md:px-4 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
+                            <Link to={'/'} className='bg-slate-200 border border-slate-800 text-black  hover:text-white hover:bg-yellow-400 hover:shadow-lg font-bold capitalize  md:px-2 w-32 md:py-3 px-2 py-1   rounded-lg'>buy now</Link>
 
                         </div>
 
@@ -52,12 +52,12 @@ export default function Quality() {
             </section>
 
             <section className='w-11/12 text-center mx-auto'>
-                <h1 className='text-4xl capitalize py-5'>best quality</h1>
+                <h1 className='md:text-4xl text-xl capitalize md:py-5 py-3'>best quality</h1>
                 <p className='py-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, illum nobis?</p>
 
 
-                <div className='flex w-full mx-auto p-10 md:flex-row flex-col gap-10 items-center text-center'>
-                    <div className='my-3'>
+                <div className='flex w-full mx-auto md:p-10 p-5 md:flex-row flex-col md:gap-10 gap-3 items-center text-center'>
+                    <div className='md:my-3 my-2'>
                         <Card img={Img6} heading={`Lorem ipsum dolor sit amet. `} para={`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut quidem modi  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio ut quidem modi temporibus, a veritatis!temporibus, a veritatis!`} />
                         {Btnlink}
 
@@ -84,10 +84,10 @@ export function Card(props) {
 
 
     return (
-        <div className='text-center   '>
-            <picture className='md:w-32 h-20 md:h-auto object-cover '>{props.img}</picture>
+        <div className='text-center'>
+            <picture className='md:w-32  w-5 mx-auto h-5 md:h-auto object-cover '>{props.img}</picture>
             <h3 className='text-yellow-400 text-xl md:text-3xl font-bold py-2'>{props.price}</h3>
-            <h2 className='text-xl py-2 md:text-4xl  '>{props.name}</h2>
+            <h2 className='text-xl py-1 md:text-4xl'>{props.name}</h2>
             <h2 className='font-bold py-2'>{props.heading}</h2>
             <p className='py-2'>{props.para}</p>
         </div>
